@@ -11,7 +11,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Adjust as needed */
+            height: 50vh; /* Adjust as needed */
+        	}
+			.padded-text {
+				padding-left: 20%; /* Adjust the percentage as needed */
+        		padding-right: 20%; /* Adjust the percentage as needed */
+			}
+			.centered-title {
+            text-align: center;
         	}
 		</style>
 
@@ -42,10 +49,15 @@
 					</div>
 
 					<body>
-						<p> <span style="color: white;"> Welcome to the digital home of Moussa Doumbia, a passionate and dedicated Computer Science major at Howard University. Here, you'll find a collection of meticulously crafted portfolios showcasing my journey, projects, and insights in the world of technology and software development.
-							As an aspiring developer, I am committed to exploring the realms of computer science, embracing challenges, and contributing to meaningful innovations. Through my portfolios, I invite you to delve into the projects I've undertaken, the skills I've acquired, and the insights I've gleaned along the way.
-							From data analysis and machine learning to web development and beyond, each portfolio is a testament to my curiosity, creativity, and commitment to excellence. Whether you're a fellow enthusiast, a potential collaborator, or simply curious about the fascinating world of technology, I hope you find inspiration and value in exploring my portfolios.
-							Thank you for visiting, and I invite you to embark on this journey with me as we navigate the ever-evolving landscape of computer science and beyond.</span>.</p>
+						<div class = "padded-text">
+							<p> 
+								<span style="color: white;"> Welcome to the digital home of Amir Ince, a passionate and dedicated Computer Science major at Howard University. Here, you'll find a collection of meticulously crafted portfolios showcasing my journey, projects, and insights in the world of technology and software development.
+								As an aspiring developer, I am committed to  exploring the realms of computer science, embracing challenges, and contributing to meaningful innovations. Through my portfolios, I invite you to delve into the projects I've undertaken, the skills I've acquired, and the insights I've gleaned along the way.
+								From data analysis and machine learning to web development and beyond, each portfolio is a testament to my curiosity, creativity, and commitment to excellence. Whether you're a fellow enthusiast, a potential collaborator, or simply curious about the fascinating world of technology, I hope you find inspiration and value in exploring my portfolios.
+								Thank you for visiting, and I invite you to embark on this journey with me as we navigate the ever-evolving landscape of computer science and beyond.
+								</span>
+							</p>
+						</div>
 					</body>
 
 				<!-- Header -->
@@ -58,7 +70,6 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Projects</a></li>
-							<li><a href="generic.html">Resume</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/amir-ince-20808a181/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
@@ -69,46 +80,53 @@
 				<!-- Main -->
 					<div id="main">
 						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://github.com/amirince/data_sci_project_1">Unlocking Insights from the <br>Stack Overflow Annual Developer Survey</a></h2>
-									<p>Project Description
-										The Stack Overflow Annual Developer Survey serves as a treasure trove of infor-
-										mation for understanding the dynamics of the developer ecosystem worldwide.
-										With this project, I embarked on a journey to extract meaningful insights from
-										this extensive dataset. The project was structured around several key objec-
-										tives:
-										1. Data Cleaning: I started by meticulously cleaning the dataset, han-
-										dling missing values, removing duplicates, and ensuring data consistency
-										to prepare a robust foundation for analysis.
-										2. Visualization: Utilizing Python libraries such as Matplotlib and Seaborn,
-										I created a series of visualizations to illustrate trends and patterns within
-										the developer community. These visualizations ranged from simple bar
-										charts to complex heatmaps, providing intuitive representations of the
-										data.
-										3. Analysis: With clean data and compelling visualizations in hand, I delved
-										into the analysis phase, exploring various aspects such as average developer
-										salaries per country, the prevalence of Python usage, preferred resources
-										for problem-solving, and the correlation between developer salaries and
-										age/gender.
-										4. GitHub Repository: As a final step, I documented my code, findings,
-										and visualizations in a GitHub repository, making it accessible to the wider
-										community. Leveraging Git/GitHub commands, I ensured version control
-										and collaborative development throughout the project lifecycle.</p>
+							<article>
+								<h2 class = 'centered-title'><a href="https://github.com/amirince/data_sci_project_1/blob/main/data_science_proj_1.ipynb">Unlocking Insights from the <br>Stack Overflow Annual Developer Survey</a></h2>
+								<header>
+									<p><strong>Results</strong><br>
+										Through the rigorous analysis of the Stack Overflow Annual Developer Survey, several key findings emerged:</p>
+										
+										<ol>
+											<li><strong>Average Salary by Country:</strong> The analysis revealed significant disparities in developer salaries across different countries, with certain regions showing higher remuneration for developers.</li>
+											<li><strong>Python Adoption:</strong> Python emerged as one of the most popular programming languages among developers, highlighting its widespread adoption and versatility in various domains.</li>
+											<li><strong>Problem-Solving Resources:</strong> Developers predominantly relied on online forums, documentation, and peer networks for troubleshooting and problem-solving, underscoring the importance of community support in the developer ecosystem.</li>
+											<li><strong>Developer Salaries vs. Age/Gender:</strong> Analysis showcased nuanced trends in developer salaries concerning age and gender, offering insights into potential factors influencing compensation disparities within the industry.</li>
+										</ol>
 								</header>
-								<a href="https://github.com/amirince/data_sci_project_1" class="image main"><img src="images/so.jpg" alt="" /></a>
+								<a href="https://github.com/amirince/data_sci_project_1/blob/main/data_science_proj_1.ipynb" class="image main"><img src="images/so.jpg" alt="", height=500, width=300 /></a>
 								<ul class="actions special">
-									<li><a href="#" class="button large">Source Code</a></li>
+									<li><a href="https://github.com/amirince/data_sci_project_1" class="button large">Source Code</a></li>
+								</ul>
+							</article>
+
+							<article>
+								<h2 class = 'centered-title'><a href="https://github.com/amirince/data_science_proj2/blob/main/SECOND_GROUP_PROJECT.ipynb">Unlocking Insights from the <br>Big Mart Sales Data</a></h2>
+								<header>
+									<strong>Results</strong><br>
+										<ol>
+											<li><strong>Visualization of Sales Data:</strong> The notebook aims to visualize sales data from BigMart, one of Europe's largest retailers, focusing on sales trends in 2011.</li>
+											<li><strong>Data Import and Overview:</strong> The notebook begins by importing necessary libraries and reading the provided CSV file into a pandas DataFrame. It then checks the first few rows of the DataFrame and provides information about its structure and data types.</li>
+											<li><strong>Statistical Summary:</strong> Statistical summary including count, mean, standard deviation, minimum, maximum, and quartile information is provided for numerical columns like Quantity, UnitPrice, and Amount.</li>
+											<li><strong>Top Selling Items:</strong> It identifies the top ten items sold in the United Kingdom and the USA, based on quantity sold.</li>
+											<li><strong>Top Contributing Countries:</strong> The notebook determines the top ten countries contributing the most towards sales. The United Kingdom emerges as the top contributor, followed by EIRE, Netherlands, Germany, and France.</li>
+											<li><strong>Sales Trends Over Months:</strong> It visualizes the total sales per month, demonstrating how sales have fluctuated over the months in 2011. The highest sales occur in December, with a noticeable increase towards the end of the year.</li>
+											<li><strong>Comparison of Sales Visualization:</strong> It compares two visualization methods: a line plot and a bar plot, for visualizing sales per month in 2011. It suggests that while both are effective, the line plot may provide a clearer understanding of sales fluctuations.</li>
+											<li><strong>Pie Chart Analysis:</strong> A pie chart is created to illustrate the contribution of different countries towards sales in 2011. It shows that the United Kingdom contributes the highest percentage towards sales, followed by the Netherlands, EIRE, Germany, France, and the USA.</li>
+										</ol>
+								</header>
+								<a href="https://github.com/amirince/data_science_proj2/blob/main/SECOND_GROUP_PROJECT.ipynb" class="image main"><img src="images/RE.jpg" alt="", height=500, width=300 /></a>
+								<ul class="actions special">
+									<li><a href="https://github.com/amirince/data_science_proj2" class="button large">Source Code</a></li>
 								</ul>
 							</article>
 
 						<!-- Posts -->
-							<section class="posts">
+							<!-- <section class="posts">
 								<article>
 									<header>
 										<h2><a href="#">Results</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/RE.jpg" alt="" /></a>
+									<a href="#" class="image fit"><img src="images/RE.jpg" alt="", height="400", width="400" /></a>
 									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
 									<ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
@@ -125,7 +143,7 @@
 										<li><a href="#" class="button">Full Story</a></li>
 									</ul>
 								</article>
-							</section>
+							</section> -->
 
 						<!-- Footer -->
 
